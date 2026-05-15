@@ -218,7 +218,7 @@ class SpotDifferenceApp(tk.Tk):
             event.x, event.y, tolerance=self.CLICK_TOLERANCE
         )
         if hit is not None:
-            self._draw_circle(hit, colour="red", tag="found")
+            self._draw_circle(hit, colour="#f38ba8", tag="found")  # red
             self._status_var.set(
                 f"Correct!  Found a '{hit.alteration_type}' difference."
             )
@@ -254,7 +254,7 @@ class SpotDifferenceApp(tk.Tk):
 
         unfound = self._state.reveal_unfound()
         for d in unfound:
-            self._draw_circle(d, colour="blue", tag="reveal")
+            self._draw_circle(d, colour="#74c7ec", tag="reveal")  # blue
         self._update_status_labels()
         if unfound:
             self._status_var.set(
