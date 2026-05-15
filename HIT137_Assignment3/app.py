@@ -63,7 +63,7 @@ class SpotDifferenceApp(tk.Tk):
     """Top-level Tkinter window for the game."""
 
     #: Pixel-distance tolerance for "close enough" clicks.
-    CLICK_TOLERANCE: int = 22
+    CLICK_TOLERANCE: int = 40
 
     #: Maximum size (w, h) any loaded image will be scaled to fit inside.
     MAX_IMAGE_SIZE: Tuple[int, int] = (720, 620)
